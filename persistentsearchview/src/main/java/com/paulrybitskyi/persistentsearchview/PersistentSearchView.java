@@ -1239,15 +1239,19 @@ public class PersistentSearchView extends FrameLayout {
     }
 
 
-    private void showKeyboard() {
+    public void showKeyboard() {
         inputEt.requestFocus();
         KeyboardManagingUtil.showKeyboard(inputEt);
     }
 
 
-    private void hideKeyboard() {
+    public void hideKeyboard() {
         inputEt.clearFocus();
         KeyboardManagingUtil.hideKeyboard(inputEt);
+    }
+
+    public void clearInputFocus() {
+        inputEt.clearFocus();
     }
 
 
